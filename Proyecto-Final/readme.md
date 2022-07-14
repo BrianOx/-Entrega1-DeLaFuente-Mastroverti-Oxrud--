@@ -1,0 +1,3 @@
+Proyecto Entregable AppCoder
+Dentro de la web AppCoder podremos movernos por diferentes secciones. En la primer sección “Campeones” podremos buscar por nombre campeones creados y su correspondiente descripción. En la sección “Items” podremos visualizar los ítems ya creados en nuestra base de datos y su correspondiente imagen. En nuestra siguiente sección “Posteos” podremos ver los formularios ya creados, desglosados por título, cuerpo, autor y la respectiva fecha de creación. Por ultimo en la sección “Insertar Post” podremos ir guardando en nuestra base de datos nuevos formularios que se podrán visualizar en la ya mencionada sección de “Posteos”
+Integrantes: Bautista de la Fuente - Augusto Mastroverti - Brian Oxrud
