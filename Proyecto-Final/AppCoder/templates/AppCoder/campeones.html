@@ -1,0 +1,30 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Campeones</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+
+<form action="{% url 'buscar-campeon' %}" method="get">
+    <label for="nombre">Nombre </label>
+    <input id="nombre" type="text" name="nombre" value="nombre">
+    <input type="submit" value="Buscar Campeon">
+</form>
+
+{% for campeon in campeones %}
+<div class="card" style="width: 18rem;">
+    <img src="{{campeon.imagen_url}}" class="card-img-top" alt="image">
+    <div class="card-body">
+      <h5 class="card-title">{{campeon.nombre}}</h5>
+      <p class="card-text">{{campeon.lore}}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
+

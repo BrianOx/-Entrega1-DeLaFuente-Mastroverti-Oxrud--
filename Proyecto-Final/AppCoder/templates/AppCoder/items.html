@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Item</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+{% for item in items %}
+
+{{item.nombre}}
+{{item.description}}
+<img src=""{{MEDIA_URL}}/{{item.imagen}}" alt="imagen">  <!--https://stackoverflow.com/questions/15175032/show-images-in-django-templates-->
+
+{% endfor %}
+
+{% endblock %}
+
